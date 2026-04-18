@@ -1,0 +1,6 @@
+{
+    "sequence": [
+        { "wander": { "wanderRadius": 8.0, "wanderSpeed": 0.8 } },
+        { "sleep": { "time": 3.0 } }
+    ]
+}

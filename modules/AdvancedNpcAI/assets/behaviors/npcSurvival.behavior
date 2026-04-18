@@ -1,0 +1,47 @@
+{
+    "dynamic": [
+        {
+            "sequence": [
+                { "is_threatened": { "minThreatLevel": "HIGH" } },
+                {
+                    "selector": [
+                        {
+                            "sequence": [
+                                { "is_health_low": { "threshold": 0.3 } },
+                                "find_safe_location",
+                                { "move_to_target": { "arrivalDistance": 2.0, "moveSpeed": 2.5 } }
+                            ]
+                        },
+                        {
+                            "sequence": [
+                                { "defend": { "attackDamage": 5, "attackRange": 2.0, "attackCooldown": 1.0 } }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sequence": [
+                "select_highest_priority_goal",
+                {
+                    "selector": [
+                        {
+                            "sequence": [
+                                { "has_goal": { "goalType": "GATHER_RESOURCE" } },
+                                { "lookup": { "tree": "AdvancedNpcAI:resourceGatherer" } }
+                            ]
+                        },
+                        {
+                            "sequence": [
+                                { "has_goal": { "goalType": "IDLE" } },
+                                { "lookup": { "tree": "AdvancedNpcAI:idle" } }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        { "lookup": { "tree": "AdvancedNpcAI:idle" } }
+    ]
+}

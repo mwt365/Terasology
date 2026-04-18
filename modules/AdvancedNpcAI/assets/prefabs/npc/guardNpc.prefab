@@ -1,0 +1,42 @@
+{
+    "persisted": true,
+    "Location": {},
+    "Character": {},
+    "AliveCharacter": {},
+    "CharacterMovement": {
+        "height": 1.8,
+        "radius": 0.35,
+        "speedMultiplier": 1.2
+    },
+    "VisualCharacter": {},
+    "DisplayName": {
+        "name": "Guard NPC",
+        "description": "An NPC that defends an area."
+    },
+    "Network": {
+        "replicateMode": "ALWAYS"
+    },
+    "Behavior": {
+        "tree": "AdvancedNpcAI:npcSurvival"
+    },
+    "Health:Health": {
+        "maxHealth": 100,
+        "currentHealth": 100,
+        "destroyEntityOnNoHealth": true
+    },
+    "AdvancedNpcAI:AI": {
+        "active": true,
+        "detectionRange": 30.0,
+        "healthFleeThreshold": 0.15,
+        "reevaluationInterval": 0.5
+    },
+    "AdvancedNpcAI:Goal": {
+        "maxGoals": 10
+    },
+    "AdvancedNpcAI:Memory": {
+        "maxEntries": 50
+    },
+    "AdvancedNpcAI:NpcType": {
+        "npcType": "guard"
+    }
+}

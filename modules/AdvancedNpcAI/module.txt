@@ -1,0 +1,21 @@
+{
+    "id": "AdvancedNpcAI",
+    "version": "1.0.0-SNAPSHOT",
+    "author": "The Terasology Foundation",
+    "displayName": "Advanced NPC AI",
+    "description": "Adds advanced NPC AI with goal-based behavior trees, memory, threat detection, resource gathering, and navigation.",
+    "dependencies": [
+        {
+            "id": "CoreAssets",
+            "minVersion": "2.0.0"
+        },
+        {
+            "id": "Health",
+            "minVersion": "2.0.0-SNAPSHOT",
+            "optional": true
+        }
+    ],
+    "serverSideOnly": false,
+    "isLibrary": true,
+    "isAugmentation": true
+}

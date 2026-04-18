@@ -1,0 +1,16 @@
+{
+    "selector": [
+        {
+            "sequence": [
+                { "is_health_low": { "threshold": 0.5 } },
+                "find_safe_location",
+                { "flee_from_threat": { "fleeDistance": 20.0, "fleeSpeed": 2.5 } }
+            ]
+        },
+        {
+            "sequence": [
+                { "defend": { "attackDamage": 5, "attackRange": 2.0, "attackCooldown": 1.5 } }
+            ]
+        }
+    ]
+}

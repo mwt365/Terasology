@@ -1,0 +1,9 @@
+{
+    "sequence": [
+        { "find_nearest_resource": { "searchRadius": 15.0 } },
+        { "set_goal_target": { "sourceKey": "foundResourcePosition" } },
+        { "move_to_target": { "arrivalDistance": 1.5, "moveSpeed": 1.5 } },
+        { "gather_resource": { "gatherTime": 2.0 } },
+        "complete_goal"
+    ]
+}

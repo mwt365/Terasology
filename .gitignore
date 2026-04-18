@@ -18,7 +18,7 @@ extensions
 !/facades/PC
 !/facades/subprojects.gradle
 /modules/*
-!/modules/advancedNpcAi
+!/modules/AdvancedNpcAI
 !/modules/subprojects.gradle
 /metas/*
 !/metas/subprojects.gradle
