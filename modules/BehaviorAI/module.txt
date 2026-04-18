@@ -1,0 +1,12 @@
+{
+    "id": "BehaviorAI",
+    "version": "1.0.0-SNAPSHOT",
+    "isReleaseManaged": true,
+    "author": "Terasology Contributors",
+    "displayName": "BehaviorAI",
+    "description": "Behavior-tree-driven AI framework for NPCs: goal arbitration, perception memory, and reactive behaviors (gather, flee, defend, wander, idle).",
+    "dependencies": [],
+    "serverSideOnly": false,
+    "isLibrary": true,
+    "isAugmentation": true
+}

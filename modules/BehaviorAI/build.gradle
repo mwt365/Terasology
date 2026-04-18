@@ -1,0 +1,32 @@
+// Copyright 2026 The Terasology Foundation
+// SPDX-License-Identifier: Apache-2.0
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+
+        // required to provide runtime dependencies to build-logic.
+        maven {
+            def repoViaEnv = System.getenv()["RESOLUTION_REPO"]
+            if (rootProject.hasProperty("alternativeResolutionRepo")) {
+                name = "from alternativeResolutionRepo property"
+                url =  rootProject.properties["alternativeResolutionRepo"]
+            } else if (repoViaEnv != null && repoViaEnv != "") {
+                name = "from \$RESOLUTION_REPO"
+                url = repoViaEnv
+            } else {
+                name = "Terasology Artifactory"
+                url = "https://artifactory.terasology.io/artifactory/virtual-repo-live"
+            }
+        }
+
+        maven {
+            name = "Terasology snapshot locals"
+            url = "https://artifactory.terasology.io/artifactory/terasology-snapshot-local"
+        }
+    }
+}
+
+plugins {
+    id("terasology-module")
+}

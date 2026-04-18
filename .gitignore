@@ -17,7 +17,7 @@ extensions
 /facades/*
 !/facades/PC
 !/facades/subprojects.gradle
-/modules/*
+
 !/modules/subprojects.gradle
 /metas/*
 !/metas/subprojects.gradle
